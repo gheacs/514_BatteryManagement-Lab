@@ -6,12 +6,12 @@
 #include "addons/RTDBHelper.h"
 
 const char* ssid = "UW MPSK";
-const char* password = ".9=gS.V*A{";
+const char* password = ""; # input password
 #define DATABASE_URL "https://esp32-firebase-demo-68643-default-rtdb.firebaseio.com/"
-#define API_KEY "AIzaSyCaQxBnfSCdqZDxoAHxr8-ez0Dhgxzpa44"
+#define API_KEY "" # input API KEY
 
 // Define different transmission rates in milliseconds
-int uploadIntervals[] = {1000};
+int uploadIntervals[] = {1000}; #change interval here
 int currentIntervalIndex = 0;
 
 int uploadInterval = uploadIntervals[currentIntervalIndex];
@@ -24,8 +24,8 @@ unsigned long sendDataPrevMillis = 0;
 int count = 0;
 bool signupOK = false;
 
-const int trigPin = D1;
-const int echoPin = D0;
+const int trigPin = D1; #adjust pin
+const int echoPin = D0; #adjust pin
 const float soundSpeed = 0.034;
 
 // Function prototypes
